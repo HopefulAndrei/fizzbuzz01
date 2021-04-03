@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/label_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="@string/input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/label_int1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_int1"
+        android:labelFor="@+id/int1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_input"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/int1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_int1"
+        app:layout_constraintStart_toEndOf="@+id/label_int1"
+        android:inputType="number"
+        android:maxLength="4"/>
+
+    <TextView
+        android:id="@+id/label_int2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_int2"
+        android:labelFor="@+id/int2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_int1"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/int2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_int2"
+        app:layout_constraintStart_toEndOf="@+id/label_int2"
+        android:inputType="number"
+        android:maxLength="4"/>
+
+    <TextView
+        android:id="@+id/label_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_limit"
+        android:labelFor="@+id/limit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_int2"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/limit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_limit"
+        app:layout_constraintStart_toEndOf="@+id/label_limit"
+        android:inputType="number"
+        android:maxLength="4"/>
+
+    <TextView
+        android:id="@+id/label_str1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_str1"
+        android:labelFor="@+id/str1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_limit"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/str1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_str1"
+        app:layout_constraintStart_toEndOf="@+id/label_str1"
+        android:inputType="text"
+        android:maxLength="5"/>
+
+    <TextView
+        android:id="@+id/label_str2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/label_str2"
+        android:labelFor="@+id/str2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_str1"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/str2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/label_str2"
+        app:layout_constraintStart_toEndOf="@+id/label_str2"
+        android:inputType="text"
+        android:maxLength="5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintTop_toBottomOf="@+id/label_str2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/button_go"/>
+
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_result"
+        android:gravity="start|top"
+        android:textAlignment="gravity"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:background="@drawable/result_background"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
